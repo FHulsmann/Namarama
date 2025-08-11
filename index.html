@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Namarama | Strategic Naming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #EDECE8;
+      color: #3F3F40;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 200px;
+      margin: 0 auto 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      display: inline-block;
+      background-color: #E73331;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .cta:hover {
+      background-color: #A92321;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #8B8B8C;
+    }
+
+    .client-logos {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .client-logos h2 {
+      margin-bottom: 2rem;
+    }
+
+    .logo-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      scroll-snap-type: x mandatory;
+      padding: 1rem;
+    }
+
+    .logo-slider img {
+      max-height: 60px;
+      flex-shrink: 0;
+      scroll-snap-align: center;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    .logo-slider img:hover {
+      filter: none;
+    }
+
+    .video-block {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .video-block h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Namarama logo" class="logo" />
+    <h1>The art of unforgettable brand names</h1>
+    <p>Want a name that hits like lightning? Namarama creates names that cut through the noise – crafted by Floris, Europe’s leading naming expert.</p>
+    <a href="mailto:info@namarama.nl" class="cta">Let’s talk name magic</a>
+  </header>
+
+  <section>
+    <h2>Why naming matters</h2>
+    <p>At Namarama, naming isn’t guesswork — it’s a strategic and creative process. Backed by 20+ years of branding expertise, we transform complex identities into clear, resonant names that stand out and scale.</p>
+    <p>Whether you're launching a new venture, rebranding, or naming a product, we guide you step-by-step to discover the name that fits like a glove — bold, smart and unforgettable.</p>
+  </section>
+
+  <section class="client-logos">
+    <h2>Trusted by brands like</h2>
+    <div class="logo-slider">
+      <img src="clients/abn_amro.png" alt="ABN AMRO logo" />
+      <img src="clients/subway.png" alt="Subway logo" />
+      <img src="clients/wakker_dier.png" alt="Wakker Dier logo" />
+      <img src="clients/dpg_media.png" alt="DPG Media logo" />
+      <img src="clients/johma.png" alt="Johma logo" />
+      <img src="clients/superunie.png" alt="Superunie logo" />
+      <img src="clients/action.png" alt="Action logo" />
+    </div>
+  </section>
+
+  <section class="video-block">
+    <h2>Discover the Power of a Great Name</h2>
+    <div class="video-wrapper">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/Beq7CVqb32Y?start=10" 
+        title="Namarama video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Namarama · All rights reserved
+  </footer>
+
+</body>
+</html>
