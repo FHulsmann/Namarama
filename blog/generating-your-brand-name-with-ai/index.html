@@ -23,44 +23,55 @@
   margin: 2rem auto;
   border-radius: 8px;
 
-  /* Rode buttons menu rechts */
-.topnav{
-  position: fixed;       /* blijft zichtbaar bij scrollen */
-  top: 24px;
-  right: 24px;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
-}
-.topnav a{
-  background: #E73331;
-  color: #fff;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 4px;
-  display: inline-block;
-  text-align: center;
-  transition: background .2s ease-in-out;
-}
-.topnav a:hover{
-  background: #A92321;
-}
+  body{margin:0;font-family:Montserrat,system-ui;background:#EDECE8;color:#3F3F40}
+  a{color:#3F3F40}
+  .wrap{max-width:900px;margin:0 auto;padding:3rem 1.5rem}
+  h1{font-size:2.2rem;margin:0 0 1rem}
+  h2{margin-top:2rem}
+  p{line-height:1.7}
+  .back{display:inline-block;margin-bottom:1.25rem;text-decoration:none}
 
-@media (max-width: 640px){
-  .topnav{ top: 12px; right: 12px; }
-}
-.wrap { padding-top: 5rem; }
-  </style>
-</head>
-<body>
-  <nav class="topnav">
-  <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="mailto:info@namarama.nl">Contact</a>
-</nav>
-<div class="wrap">
-<a class="back" href="/blog/">← Back to Blog</a>
+  .blog-image{
+    display:block;
+    max-width:700px;
+    width:100%;
+    height:auto;
+    margin:2rem auto;
+    border-radius:8px;
+    /* optioneel: schaduw */
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+  } /* <- deze miste je */
+
+  /* Rode buttons menu rechts */
+  .topnav{
+    position:fixed;
+    top:24px;
+    right:24px;
+    display:flex;
+    gap:10px;
+    z-index:1000;
+  }
+  .topnav a{
+    background:#E73331;
+    color:#fff;
+    padding:10px 18px;
+    text-decoration:none;
+    font-weight:500;
+    border-radius:4px;
+    display:inline-block;
+    text-align:center;
+    transition:background .2s ease-in-out;
+  }
+  .topnav a:hover{ background:#A92321; }
+
+  @media (max-width:640px){
+    .topnav{ top:12px; right:12px; }
+  }
+
+  /* ruimte zodat fixed nav niks overlapt */
+  .wrap{ padding-top:5rem; }
+</style>
+
 <h1>Generating your brand name with AI</h1>
     <img src="../images/floris-hulsmann-portret1.jpg"
      alt="Floris Hülsmann" class="blog-image" loading="lazy">
