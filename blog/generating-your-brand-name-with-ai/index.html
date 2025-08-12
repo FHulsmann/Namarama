@@ -23,6 +23,15 @@
   margin: 2rem auto;
   border-radius: 8px;
 
+  /* Rode buttons menu rechts */
+.topnav{
+  position: fixed;       /* blijft zichtbaar bij scrollen */
+  top: 24px;
+  right: 24px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
 .topnav a{
   background: #E73331;
   color: #fff;
@@ -34,12 +43,14 @@
   text-align: center;
   transition: background .2s ease-in-out;
 }
-.topnav a:hover{ background: #A92321; }
+.topnav a:hover{
+  background: #A92321;
+}
 
 @media (max-width: 640px){
   .topnav{ top: 12px; right: 12px; }
 }
-        .wrap { padding-top: 5rem; }
+.wrap { padding-top: 5rem; }
   </style>
 </head>
 <body>
