@@ -8,84 +8,104 @@
   <link rel="icon" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:Montserrat,system-ui;background:#EDECE8;color:#3F3F40}
-    a{color:#3F3F40}
-    .wrap{max-width:900px;margin:0 auto;padding:3rem 1.5rem}
-    h1{font-size:2.2rem;margin:0 0 1rem}
-    h2{margin-top:2rem}
-    p{line-height:1.7}
-    .back{display:inline-block;margin-bottom:1.25rem;text-decoration:none}
-      .blog-image {
-  display: block;
-  max-width: 700px;
-  width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  border-radius: 8px;
-
-  /* Rode buttons menu rechts */
-.topnav{
-  position: fixed;       /* blijft zichtbaar bij scrollen */
-  top: 24px;
-  right: 24px;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
-}
-.topnav a{
-  background: #E73331;
-  color: #fff;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 4px;
-  display: inline-block;
-  text-align: center;
-  transition: background .2s ease-in-out;
-}
-.topnav a:hover{
-  background: #A92321;
-}
-
-@media (max-width: 640px){
-  .topnav{ top: 12px; right: 12px; }
-}
-.wrap { padding-top: 5rem; }
+    body {
+      margin:0;
+      font-family:Montserrat,system-ui;
+      background:#EDECE8;
+      color:#3F3F40;
+    }
+    a { color:#3F3F40; }
+    .wrap {
+      max-width:900px;
+      margin:0 auto;
+      padding:3rem 1.5rem;
+      padding-top: 5rem; /* ruimte voor menu */
+    }
+    h1 { font-size:2.2rem; margin:0 0 1rem; }
+    h2 { margin-top:2rem; }
+    p { line-height:1.7; }
+    .back {
+      display:inline-block;
+      margin-bottom:1.25rem;
+      text-decoration:none;
+    }
+    .blog-image {
+      display:block;
+      max-width:700px;
+      width:100%;
+      height:auto;
+      margin:2rem auto;
+      border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+    /* Rode buttons menu rechts */
+    .topnav {
+      position:fixed;
+      top:24px;
+      right:24px;
+      display:flex;
+      gap:10px;
+      z-index:1000;
+    }
+    .topnav a {
+      background:#E73331;
+      color:#fff;
+      padding:10px 18px;
+      text-decoration:none;
+      font-weight:500;
+      border-radius:4px;
+      display:inline-block;
+      text-align:center;
+      transition:background .2s ease-in-out;
+    }
+    .topnav a:hover {
+      background:#A92321;
+    }
+    @media (max-width:640px){
+      .topnav { top:12px; right:12px; }
+    }
   </style>
 </head>
 <body>
   <nav class="topnav">
-  <a href="/">Home</a>
-  <a href="/blog/">Blog</a>
-  <a href="mailto:info@namarama.nl">Contact</a>
-</nav>
-<div class="wrap">
-<a class="back" href="/blog/">← Back to Blog</a>
-<h1>Generating your brand name with AI</h1>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="mailto:info@namarama.nl">Contact</a>
+  </nav>
+
+  <div class="wrap">
+    <a class="back" href="/blog/">← Back to Blog</a>
+    <h1>Generating your brand name with AI</h1>
     <img src="../images/floris-hulsmann-portret1.jpg"
-     alt="Floris Hülsmann" class="blog-image" loading="lazy">
-<p>As a naming expert, I am often asked for my opinion on the rise of AI tools such as ChatGPT for generating business names. It is tempting to use a free tool, especially if you need a name quickly. But as with most things that are free, there are also drawbacks. Here are five disadvantages of using ChatGPT as a free name generator.</p>
-<h2>Lack of Depth and Context</h2>
-<p>One of the biggest challenges in choosing a business name is finding a name that is not only unique but also truly resonates with your target audience. ChatGPT generates names based on the input you provide, but it does not understand the nuances of your brand, your market position or your long-term vision. The result is often a superficial name that does not really capture the essence of your brand.</p>
-<h2>Lack of Creative Originality</h2>
-<p>Although ChatGPT can be impressive at generating a list of names, it often lacks the creative flair that a human naming expert offers. These are often compound names made up of two words. For example, for my work, AI comes up with these options:</p>
-<ul>
-  <li>Nomenix Global</li>
-  <li>BrandCrafters</li>
-  <li>NameSphere</li>
-  <li>VerbaCore</li>  
-  <li>NameMinds</li>
-</ul>
-<p>Nice and all, sure, but exactly what I said, compounds and nothing else. A good name requires not only originality, but also a deep understanding of linguistic nuances, cultural associations and market trends. AI generates names based on patterns, but a truly distinctive name comes from creative thinking and experience.</p>
-<h2>No Insight into Cultural and Linguistic Sensitivities</h2>
-<p>Another important factor in choosing a name is understanding the cultural and linguistic implications. A name that works perfectly in one language may be inappropriate or even offensive in another. ChatGPT is a language model and cannot analyse culture or detect linguistic sensitivities. On the other hand, you can ask whether the name you have come up with poses a risk in another language. I have already discovered that it is not 100% safe. The risk of choosing a name with undesirable connotations is considerably greater if you rely on an AI tool.</p>
-<h2>No Emotional Connection</h2>
-<p>You remain dependent on a robot without emotion. I can't put it any nicer than that. A name is more than just a label; it is a crucial part of your brand identity. A strong brand name evokes emotions, tells a story and creates a bond with your target audience. ChatGPT cannot feel or understand emotional connections. It generates words based on algorithms, but lacks the ability to truly capture the subtle nuances and emotions that come with a strong brand name.</p>
-<h2>Risk of Trademark Infringement</h2>
-<p>When choosing a name, you need to make sure that it is not already in use or that it does not resemble an existing brand name too closely. AI tools such as ChatGPT do not take trademark law or existing trade names into account. You really need to outsource trademark research to a specialist.</p>
-<h2>Conclusion</h2>
-<p>Although AI tools such as ChatGPT can be useful for inspiration, they are no substitute for the real craft. A good name is an investment in your brand, and it pays to invest in it. With time and attention. </p>
-<p>Interested in more help with naming, book a call with me</p>>
-</div>
+         alt="Floris Hülsmann" class="blog-image" loading="lazy">
+
+    <p>As a naming expert, I am often asked for my opinion on the rise of AI tools such as ChatGPT for generating business names. It is tempting to use a free tool, especially if you need a name quickly. But as with most things that are free, there are also drawbacks. Here are five disadvantages of using ChatGPT as a free name generator.</p>
+
+    <h2>Lack of Depth and Context</h2>
+    <p>One of the biggest challenges in choosing a business name is finding a name that is not only unique but also truly resonates with your target audience. ChatGPT generates names based on the input you provide, but it does not understand the nuances of your brand, your market position or your long-term vision. The result is often a superficial name that does not really capture the essence of your brand.</p>
+
+    <h2>Lack of Creative Originality</h2>
+    <p>Although ChatGPT can be impressive at generating a list of names, it often lacks the creative flair that a human naming expert offers. These are often compound names made up of two words. For example, for my work, AI comes up with these options:</p>
+    <ul>
+      <li>Nomenix Global</li>
+      <li>BrandCrafters</li>
+      <li>NameSphere</li>
+      <li>VerbaCore</li>
+      <li>NameMinds</li>
+    </ul>
+    <p>Nice and all, sure, but exactly what I said, compounds and nothing else. A good name requires not only originality, but also a deep understanding of linguistic nuances, cultural associations and market trends. AI generates names based on patterns, but a truly distinctive name comes from creative thinking and experience.</p>
+
+    <h2>No Insight into Cultural and Linguistic Sensitivities</h2>
+    <p>Another important factor in choosing a name is understanding the cultural and linguistic implications. A name that works perfectly in one language may be inappropriate or even offensive in another. ChatGPT is a language model and cannot analyse culture or detect linguistic sensitivities. On the other hand, you can ask whether the name you have come up with poses a risk in another language. I have already discovered that it is not 100% safe. The risk of choosing a name with undesirable connotations is considerably greater if you rely on an AI tool.</p>
+
+    <h2>No Emotional Connection</h2>
+    <p>You remain dependent on a robot without emotion. I can't put it any nicer than that. A name is more than just a label; it is a crucial part of your brand identity. A strong brand name evokes emotions, tells a story and creates a bond with your target audience. ChatGPT cannot feel or understand emotional connections. It generates words based on algorithms, but lacks the ability to truly capture the subtle nuances and emotions that come with a strong brand name.</p>
+
+    <h2>Risk of Trademark Infringement</h2>
+    <p>When choosing a name, you need to make sure that it is not already in use or that it does not resemble an existing brand name too closely. AI tools such as ChatGPT do not take trademark law or existing trade names into account. You really need to outsource trademark research to a specialist.</p>
+
+    <h2>Conclusion</h2>
+    <p>Although AI tools such as ChatGPT can be useful for inspiration, they are no substitute for the real craft. A good name is an investment in your brand, and it pays to invest in it. With time and attention. Read my free white paper Coming Up with a Company Name to find out how to do it right.</p>
+  </div>
 </body>
 </html>
