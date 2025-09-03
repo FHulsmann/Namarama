@@ -6,7 +6,35 @@
   <nav class="topnav">
   <a href="/">Home</a>
   <a href="/blog/">Blog</a>
-  <a href="mailto:info@namarama.nl">Contact</a>
+  <a href="mailto:info@namarama.nl">Contact</a>/* NAV rechtsboven als buttons */
+.topnav{
+  position: fixed;          /* blijft zichtbaar */
+  top: 24px;
+  right: 24px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+.topnav a{
+  background:#E73331;
+  color:#fff;
+  padding:10px 20px;
+  text-decoration:none;
+  font-weight:500;
+  border-radius:4px;
+  transition: background .2s ease-in-out;
+  display:inline-block;
+  text-align:center;
+}
+.topnav a:hover{ background:#A92321; }
+
+/* Extra ruimte voor content zodat nav niets overlapt */
+header{ padding-top: 4rem; }           /* desktop */
+@media (max-width: 640px){
+  .topnav{ top:12px; right:12px; }     /* iets dichter op randen */
+  header{ padding-top: 7rem; }         /* méér ruimte boven logo op mobiel */
+}
+
 </nav>
 
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
@@ -47,6 +75,11 @@
       background-color: #EDECE8;
       color: #3F3F40;
     }
+<nav class="topnav" aria-label="Main">
+  <a href="/">Home</a>
+  <a href="/blog/">Blog</a>
+  <a href="mailto:info@namarama.nl">Contact</a>
+</nav>
 
     header {
       padding: 4rem 2rem 2rem;
